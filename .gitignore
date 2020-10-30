@@ -5,3 +5,4 @@
 *.fasta
 
 !all_vs_all-automatically_mapped_swissprot_deeploc_localizations.csv
+!swissprot_with_deeploc_mapping.csv
