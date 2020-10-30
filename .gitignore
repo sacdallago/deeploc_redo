@@ -4,3 +4,4 @@
 *.txt
 *.fasta
 
+!all_vs_all-automatically_mapped_swissprot_deeploc_localizations.csv
