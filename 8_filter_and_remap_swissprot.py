@@ -13,3 +13,5 @@ assert(len(locations_mapping['MANUAL_MAP'].unique()) == 10)
 swissprot = read_csv("evidence_subcellular_localizations.csv")
 swissprot_deeploc = swissprot.merge(locations_mapping, left_on="location", right_on="location", how="left").dropna()
 swissprot_deeploc.to_csv("swissprot_with_deeploc_mapping.csv", index=False)
+swissprot_deeploc['MANUAL_MAP'].value_counts().to_csv("swissprot_with_deeploc_mapping_value_counts.csv")
+
